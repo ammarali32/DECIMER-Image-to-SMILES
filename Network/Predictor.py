@@ -85,6 +85,6 @@ def predictor(Image_path):
 	return result
 
 result = predictor(args.input)
-print (converter.decode(''.join(result).replace("<start>","").replace("<end>","")),'\tPredictedSmiles', flush=True)
+print (converter.decode(''.join(result)),'\tPredictedSmiles', flush=True)
 
 f.close()
