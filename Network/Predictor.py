@@ -19,9 +19,9 @@ parser.add_argument(
 
 args= parser.parse_args()
 
-f = open('Predictions.txt' , 'w')
+f = open('../../../Predictions.txt' , 'w')
 sys.stdout = f
-print (datetime.now().strftime('%Y/%m/%d %H:%M:%S'),"Predictions\n\n", flush=True)
+#print (datetime.now().strftime('%Y/%m/%d %H:%M:%S'),"Predictions\n\n", flush=True)
 
 tokenizer = pickle.load(open("tokenizer.pkl","rb"))
 
